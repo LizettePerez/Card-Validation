@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header></header>
+  <main>
+
+    <h1>Validación de Tarjeta de Crédito con Algoritmo de Luhn</h1>
+    <!--NUMERO DE TARJETA-->
+    <label for="tarjeta">Ingrese el número de tarjeta de crédito:</label>
+    <input type="text" id="tarjeta" maxlength="19">
+    <!--NOMBRE TITULAR-->
+    <label for="nombre">Nombre Titular</label>
+    <input type="text" id="nombre">
+    <!--NOMBRE FECHA-->
+    <label for="fecha">Válida Hasta</label>
+    <input type="text" id="fechaMonth" maxlength="2">/<input type="text" id="fechaYear" maxlength="2">
+    <!--NOMBRE CVV-->
+    <label for="cvv">CVV</label>
+    <input type="text" id="cvv" maxlength="3">
+    <!--BOTON VALIDAR-->
+    <button onclick="validarTarjeta()">Validar</button>
+    <p id="resultado"></p>
+
+  </main>
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>

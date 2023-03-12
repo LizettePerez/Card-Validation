@@ -13,20 +13,24 @@
 
     <h1>Validación de Tarjeta de Crédito con Algoritmo de Luhn</h1>
     <!--NUMERO DE TARJETA-->
-    <label for="creditCardNumber">Ingrese el número de tarjeta de crédito:</label>
-    <input type="text" id="creditCardNumber" maxlength="19">
-    <!--NOMBRE TITULAR-->
-    <label for="creditCardName">Nombre Titular</label>
-    <input type="text" id="creditCardName">
-    <!--NOMBRE FECHA-->
-    <label for="creditCardDate">Válida Hasta</label>
-    <input type="text" id="creditCardDateMonth" maxlength="2">/<input type="text" id="creditCardDateYear" maxlength="2">
-    <!--NOMBRE CVV-->
-    <label for="creditCardCvv">CVV</label>
-    <input type="text" id="creditCardCvv" maxlength="3">
-    <!--BOTON VALIDAR-->
-    <button onclick="handleValidation()">Validar</button>
-    <p id="output"></p>
+    <form>
+      <label for="creditCardNumber">Ingrese el número de tarjeta de crédito:</label>
+      <input type="text" id="creditCardNumber" pattern="[0-9]{11,19}" maxlength="19" name="creditCardNumber" title="Por favor ingrese un número de tarjeta válido (entre 11 y 19 dígitos)" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+      <!--NOMBRE TITULAR-->
+      <label for="creditCardName">Nombre Titular</label>
+      <input type="text" id="creditCardName" name="creditCardName" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32">
+      <!--NOMBRE FECHA-->
+      <label for="creditCardDate">Válida Hasta</label>
+      <input type="text1" id="creditCardDateMonth" pattern="[0-9]{0,2}" maxlength="2" name="creditCardDateMonth" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+      /
+      <input type="text1" id="creditCardDateYear" pattern="[0-9]{0,2}" maxlength="2" name="creditCardDateYear" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+      <!--NOMBRE CVV-->
+      <label for="creditCardCvv">CVV</label>
+      <input type="text2" id="creditCardCvv" pattern="[0-9]{3,3}" maxlength="3" name="creditCardCvv" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+      <!--BOTON VALIDAR-->
+      <button onclick="handleValidation()">Validar</button>
+      <p id="output"></p>
+    </form>
 
   </main>
   <footer></footer>

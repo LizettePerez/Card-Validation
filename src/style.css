@@ -5,3 +5,8 @@ input[type="text1"]{
 input[type="text2"]{
     width: 25px;
 }
+
+body{
+    background-color: gray;
+    color: white;
+}

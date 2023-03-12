@@ -1,16 +1,18 @@
-import validator from './validator.js';
+// import validator from './validator.js';
+// console.log(validator);
 
-console.log(validator);
-
-function validarTarjeta(){
-    var tarjeta = document.getElementById('tarjeta').value;
-    if (tarjeta == ''){
+function handleValidation(){
+    var creditCardNumber = document.getElementById('creditCardNumber').value;
+    //ALERTA PARA INGRESAR NUMERO//
+    if (creditCardNumber == ''){
         alert('Por favor ingrese un número de tarjeta.');
         return;
     }
 
-    if (isNaN(tarjeta)) {
+    //ALERTA PARA INGRESAR SOLO NUMEROS//
+    if (isNaN(creditCardNumber)) {
         alert('Ingrese solo números en el campo de número de tarjeta.');
         return;
     }
 }
+

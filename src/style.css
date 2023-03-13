@@ -6,21 +6,13 @@ main {
 section {
     float: left;
     width: 58%;
-    margin: 2px;
+    margin-left: 10px;
 }
 
 aside {
     float: right;
     width: 38%;
     margin: 2px;
-}
-
-input[type="text1"] {
-    width: 20px;
-}
-
-input[type="text2"] {
-    width: 25px;
 }
 
 /* HEADER */
@@ -30,6 +22,7 @@ header {
     display: block;
     color: white;
     background-color: #e2f4f6;
+    border-top-left-radius: 15px;
 }
 
 header img {
@@ -41,6 +34,7 @@ header img {
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: 800;
+    border-top-left-radius: 15px;
 }
 
 /*  */
@@ -53,15 +47,23 @@ body {
 
 h1 {
     text-align: center;
+    text-align: left;
 }
 
-label {}
+h2 {
+    font-weight: 400;
+    font-size: medium;
+}
 
-input {}
+h3 {
+    font-weight: 500;
+    font-size: smaller;
+}
+
 
 /* NAV */
 
-ul {
+ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -70,10 +72,10 @@ ul {
     font-weight: 700;
 }
 
-li {
+ol li{
     float: left;
-
 }
+
 
 li a {
     display: block;
@@ -93,7 +95,7 @@ li img {
     width: 20px;
 }
 
-.lupa{
+.lupa {
     background-color: transparent !important;
 }
 
@@ -113,11 +115,48 @@ input[type="search"] {
     color: #33a5aa;
 }
 
-
-
-::placeholder { 
-    color: #33a5aa; 
+::placeholder {
+    color: #33a5aa;
 }
+
+/* PAGO */
+
+.infoPago {
+    text-decoration: none;
+    color: #ecc4bc;
+    padding-left: 5px;
+}
+
+input[type="text1"] {
+    width: 20px;
+}
+
+input[type="text2"] {
+    width: 25px;
+}
+
+
+.container {
+    background-color: #e7f4f6;
+    border: 1px solid #33a5aa;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+
+hr {
+    border: 1px solid #33a5aa;
+    width: 98%;
+}
+
+h3 a {
+    text-decoration: none;
+    color: #ecc4bc;
+    padding-left: 25px;
+}
+
+
 
 /* SHOPPING CART */
 

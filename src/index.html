@@ -2,8 +2,9 @@
 <html>
 
 <head>
+  <link rel="shortcut icon" href="img/favicon-16x16.png">
   <meta charset="utf-8">
-  <title>Tarjeta de crédito válida</title>
+  <title>Look Naturel - Pago</title>
   <link rel="stylesheet" href="style.css" />
   <!-- FONT MONTSERRAT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +22,11 @@
   </header>
 
   <nav>
-    <ul>
+    <ol class="nav">
       <li><a href="#">| Inicio |</a></li>
       <li><a href="#">| Catálogo |</a></li>
       <li><a href="#">| Colecciones |</a></li>
-      <li><a href="#">| Envios |</a></li>
+      <li><a href="#">| Envíos |</a></li>
       <li><a href="#">| Garantía |</a></li>
       <li><a href="#">| Preguntas Frecuentes |</a></li>
       <li><a href="#">| Contacto |</a></li>
@@ -33,44 +34,70 @@
       <li><a class="active">| Carrito de Compra |</a></li>
       <li><input type="search" id="busqueda" name="q" placeholder="Ingresar producto a buscar"></li>
       <li><a class="lupa" href="#"><img src="img/lupa.png"></a></li>
-    </ul>
+    </ol>
   </nav>
 
 
 
   <main>
     <section>
-      <h1>Validación de Tarjeta de Crédito con Algoritmo de Luhn</h1>
-      <form method="post">
-        <!--NUMERO DE TARJETA-->
-        <label for="creditCardNumber">Ingrese el número de tarjeta de crédito:</label>
-        <input type="text" id="creditCardNumber" pattern="[0-9]" maxlength="19" name="creditCardNumber"
-          onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+      <h3><a class="infoPago" href="#">Carrito </a> &#62; <a class="infoPago" href="#">Información </a> &#62; <a
+          class="infoPago" href="#">Información </a> &#62; <a class="infoPago" href="#">Envíos </a> &#62; <a
+          class="infoPago" href="#"> Pago </a></h3>
 
-        <!--NOMBRE TITULAR-->
-        <label for="creditCardName">Nombre Titular</label>
-        <input type="text" id="creditCardName" name="creditCardName" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
-          onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32"
-          value="Lizette Pérez">
+      <h1>Pago</h1>
+      <h2>Todas las transacciones son seguras y están encriptadas.</h2><br>
 
-        <!--NOMBRE FECHA-->
-        <label for="creditCardDate">Válida Hasta</label>
-        <input type="text1" id="creditCardDateMonth" pattern="[1-9]|1[0-2]" min="1" max="12" maxlength="2"
-          name="creditCardDateMonth" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required
-          value="11">
-        /
-        <input type="text1" id="creditCardDateYear" pattern="[0-9]{2,2}" maxlength="2" name="creditCardDateYear"
-          onkeypress="return event.charCode >= 48 && event.charCode <= 57" required value="23">
 
-        <!--NOMBRE CVV-->
-        <label for="creditCardCvv">CVV</label>
-        <input type="text2" id="creditCardCvv" pattern="[0-9]{3,3}" maxlength="3" name="creditCardCvv"
-          onkeypress="return event.charCode >= 48 && event.charCode <= 57" required value="666">
 
-        <!--BOTON VALIDAR-->
-        <button onclick="handleValidation()">Validar</button>
-        <div id="output"></div>
-      </form>
+      <div class="card">
+        <div class="container">
+          <div class="infoMercado">
+            <h4>asddsa</h4>
+          </div>
+          <form method="post">
+            <!--NUMERO DE TARJETA-->
+            <label for="creditCardNumber">Ingrese el número de tarjeta de crédito:</label>
+            <input type="text" id="creditCardNumber" pattern="[0-9]*" maxlength="19" name="creditCardNumber"
+              onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+
+            <!--NOMBRE TITULAR-->
+            <label for="creditCardName">Nombre Titular</label>
+            <input type="text" id="creditCardName" name="creditCardName" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
+              onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32"
+              value="Lizette Pérez">
+
+            <!--NOMBRE FECHA-->
+            <label for="creditCardDate">Válida Hasta</label>
+            <input type="text1" id="creditCardDateMonth" pattern="[1-9]|1[0-2]" min="1" max="12" maxlength="2"
+              name="creditCardDateMonth" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required
+              value="11">
+            /
+            <input type="text1" id="creditCardDateYear" pattern="[0-9]{2,2}" maxlength="2" name="creditCardDateYear"
+              onkeypress="return event.charCode >= 48 && event.charCode <= 57" required value="23">
+
+            <!--NOMBRE CVV-->
+            <label for="creditCardCvv">CVV</label>
+            <input type="text2" id="creditCardCvv" pattern="[0-9]{3,3}" maxlength="3" name="creditCardCvv"
+              onkeypress="return event.charCode >= 48 && event.charCode <= 57" required value="666">
+
+            <!--BOTON VALIDAR-->
+            <button type="submit">Finalizar Pedido</button>
+            <div id="output"></div>
+          </form>
+        </div>
+      </div><br>
+      <hr>
+      <div>
+        <h3 class="politicas">
+          <a href="#"> Política de reembolso </a>
+          <a href="#"> Política de envío </a>
+          <a href="#"> Política de privacidad </a>
+          <a href="#"> Términos del servicio </a>
+          <a href="#"> Información de contacto </a>
+        </h3>
+      </div>
+
     </section>
 
     <aside class="product">
@@ -111,11 +138,7 @@
           <p class="finalPrice">$53.000</p>
         </div>
       </div>
-
-
-
     </aside>
-
   </main>
 
 
@@ -127,10 +150,11 @@
       <a href="#"><img src="img/whatsapp.png"></a>
       <a href="#"><img src="img/tik-tok.png"></a>
     </div>
-    <div><p class="copyright">© 2023, looknaturel Tecnología de Shopify</p></div>
+    <div>
+      <p class="copyright">© 2023 - Look Naturel - Tecnología de Shopify</p>
+    </div>
   </footer>
-  <!-- <script src="index.js" type="module"></script> -->
-  <script src="index.js"></script>
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>

@@ -1,12 +1,182 @@
-input[type="text1"]{
-    width:20px;
+main {
+    display: table;
+    width: 100%;
 }
 
-input[type="text2"]{
+section {
+    float: left;
+    width: 58%;
+    margin: 2px;
+}
+
+aside {
+    float: right;
+    width: 38%;
+    margin: 2px;
+}
+
+input[type="text1"] {
+    width: 20px;
+}
+
+input[type="text2"] {
     width: 25px;
 }
 
-body{
-    background-color: gray;
+/* HEADER */
+
+header {
+    text-align: center;
+    display: block;
     color: white;
+    background-color: #e2f4f6;
+}
+
+header img {
+    width: 100%;
+}
+
+.title {
+    background-color: #ecc4bc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+
+/*  */
+
+body {
+    color: #33a5aa;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+label {}
+
+input {}
+
+/* NAV */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e2f4f6;
+    font-weight: 700;
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: #33a5aa;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #33a5aa;
+    color: white;
+}
+
+/* LUPA */
+li img {
+    width: 20px;
+}
+
+.lupa{
+    background-color: transparent !important;
+}
+
+/*  */
+
+.active {
+    background-color: #ecc4bc !important;
+    color: white;
+}
+
+input[type="search"] {
+    padding: 10px;
+    margin-left: 15px;
+    width: 200px;
+    text-align: center;
+    border-color: #33a5aa;
+    color: #33a5aa;
+}
+
+
+
+::placeholder { 
+    color: #33a5aa; 
+}
+
+/* SHOPPING CART */
+
+.productDetail {
+    padding: 0 20px;
+    box-sizing: border-box;
+    right: 0;
+    background-color: #e2f4f6;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+.shoppingCart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.shoppingCart figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.sectionFinal {
+    background-color: #ecc4bc;
+    border-radius: 15px;
+}
+
+.total {
+    display: flex;
+    color: white;
+    font-weight: 700;
+}
+
+#total {
+    padding: 0 20px;
+    display: grid;
+    margin-left: 80px;
+    grid-template-columns: 1fr auto auto auto;
+}
+
+/* FOOTER */
+
+.redesSociales {
+    text-align: center;
+    display: block;
+}
+
+.redesSociales img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: x-small;
+    text-align: center;
 }

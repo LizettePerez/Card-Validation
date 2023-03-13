@@ -25,13 +25,12 @@ function handleValidation() {
     // Validar el número de tarjeta de crédito
     if (!validateCreditCardNumber(creditCardNumber)) {
         document.getElementById("output").innerHTML = "La tarjeta de crédito " + creditCardNumber + " no es válida.";
-        return;
+        return false;
     }
 
     // Si llegamos hasta aquí, todos los campos son válidos
-    document.getElementById("output").innerHTML = "La tarjeta de crédito " + creditCardNumber + " es válida.";
-
-
+    document.getElementById("output").innerHTML = "La tarjeta de crédito " + creditCardNumber + " si es válida.";
+    
 }
 
 function validateCreditCardNumber(creditCardNumber) {

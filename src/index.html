@@ -2,159 +2,202 @@
 <html>
 
 <head>
-  <link rel="shortcut icon" href="img/favicon-16x16.png">
-  <meta charset="utf-8">
-  <title>Look Naturel - Pago</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- FONT MONTSERRAT -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon-16x16.png">
+    <meta charset="utf-8">
+    <title>Look Naturel - Pago</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
 
 </head>
 
 <body>
-  <header>
-    <marquee class="title"> | ENVIOS A TODO CHILE | </marquee>
-    <img src="img/Sin título-2.png">
-  </header>
+    <header>
+        <marquee class="title"> | ENVIOS A TODO CHILE | </marquee>
+        <img src="img/Sin título-2.png">
+    </header>
 
-  <nav>
-    <ol class="nav">
-      <li><a href="#">| Inicio |</a></li>
-      <li><a href="#">| Catálogo |</a></li>
-      <li><a href="#">| Colecciones |</a></li>
-      <li><a href="#">| Envíos |</a></li>
-      <li><a href="#">| Garantía |</a></li>
-      <li><a href="#">| Preguntas Frecuentes |</a></li>
-      <li><a href="#">| Contacto |</a></li>
-      <li><a href="#">| Sobre Nosotros |</a></li>
-      <li><a class="active">| Carrito de Compra |</a></li>
-      <li><input type="search" id="busqueda" name="q" placeholder="Ingresar producto a buscar"></li>
-      <li><a class="lupa" href="#"><img src="img/lupa.png"></a></li>
-    </ol>
-  </nav>
-
-
-
-  <main>
-    <section>
-      <h3><a class="infoPago" href="#">Carrito </a> &#62; <a class="infoPago" href="#">Información </a> &#62; <a
-          class="infoPago" href="#">Información </a> &#62; <a class="infoPago" href="#">Envíos </a> &#62; <a
-          class="infoPago" href="#"> Pago </a></h3>
-
-      <h1>Pago</h1>
-      <h2>Todas las transacciones son seguras y están encriptadas.</h2><br>
+    <nav>
+        <ol class="nav">
+            <li><a href="#">| Inicio |</a></li>
+            <li><a href="#">| Catálogo |</a></li>
+            <li><a href="#">| Colecciones |</a></li>
+            <li><a href="#">| Envíos |</a></li>
+            <li><a href="#">| Garantía |</a></li>
+            <li><a href="#">| Preguntas Frecuentes |</a></li>
+            <li><a href="#">| Contacto |</a></li>
+            <li><a href="#">| Sobre Nosotros |</a></li>
+            <li><a class="active">| Carrito de Compra |</a></li>
+            <li><input type="search" id="busqueda" name="q" placeholder="Ingresar producto a buscar"></li>
+            <li><a class="lupa" href="#"><img src="img/lupa.png"></a></li>
+        </ol>
+    </nav>
 
 
 
-      <div class="card">
-        <div class="container">
-          <div class="infoMercado">
-            <h4>asddsa</h4>
+    <main>
+        <section>
+            <h3><a class="infoPago" href="#">Carrito </a> &#62; <a class="infoPago" href="#">Información </a> &#62; <a
+                    class="infoPago" href="#">Envíos </a> &#62; <a class="infoPago" href="#"> Pago </a></h3>
+
+            <h1>Pago</h1>
+            <h2>Todas las transacciones son seguras y están encriptadas.</h2><br>
+
+
+
+            <div class="card">
+                <div class="conteinerLogos">
+                    <div class="logoPago">
+                        <img src="img/Mercado Pago.png">
+                    </div>
+                </div>
+
+                <div class="containerPago">
+
+                    <!-- <input type="text" id="input"> oninput: <span id="result"></span> -->
+
+
+                    <!-- <br>
+          <div class="containerImg">
+            <img src="img/basic.png">
+            <div class="imageOverlay">
+              <h1>Título de la imagen</h1>
+              <p>Descripción de la imagen</p>
+            </div>
           </div>
-          <form method="post">
-            <!--NUMERO DE TARJETA-->
-            <label for="creditCardNumber">Ingrese el número de tarjeta de crédito:</label>
-            <input type="text" id="creditCardNumber" pattern="[0-9]*" maxlength="19" name="creditCardNumber"
-              onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+          <br><br> -->
 
-            <!--NOMBRE TITULAR-->
-            <label for="creditCardName">Nombre Titular</label>
-            <input type="text" id="creditCardName" name="creditCardName" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
-              onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32"
-              value="Lizette Pérez">
+                    <form method="post">
+                        <br>
+                        <div class="spaceTitleNumbName">
+                            <label for="creditCardNumber">Número de tarjeta</label>
+                            <label for="creditCardName">Nombre del titular</label>
+                        </div>
 
-            <!--NOMBRE FECHA-->
-            <label for="creditCardDate">Válida Hasta</label>
-            <input type="text1" id="creditCardDateMonth" pattern="[1-9]|1[0-2]" min="1" max="12" maxlength="2"
-              name="creditCardDateMonth" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required
-              value="11">
-            /
-            <input type="text1" id="creditCardDateYear" pattern="[0-9]{2,2}" maxlength="2" name="creditCardDateYear"
-              onkeypress="return event.charCode >= 48 && event.charCode <= 57" required value="23">
+                        <div class="spaceInputNumbName">
+                            <input type="text" id="creditCardName" name="creditCardName" required
+                                pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
+                                onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32"
+                                value="Lizette Pérez">
+                            <input type="text" id="creditCardNumber" pattern="[0-9]*" maxlength="19"
+                                name="creditCardNumber" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                required>
+                        </div>
 
-            <!--NOMBRE CVV-->
-            <label for="creditCardCvv">CVV</label>
-            <input type="text2" id="creditCardCvv" pattern="[0-9]{3,3}" maxlength="3" name="creditCardCvv"
-              onkeypress="return event.charCode >= 48 && event.charCode <= 57" required value="666">
+                        <br>
 
-            <!--BOTON VALIDAR-->
-            <button type="submit">Finalizar Pedido</button>
-            <div id="output"></div>
-          </form>
+                        <div class="spaceTitleDateCvv">
+                            <label for="creditCardDate">Vencimiento</label>
+                            <label for="creditCardCvv">CVV</label>
+                        </div>
+
+                        <div class="spaceInputDateCvv">
+                            <input type="text2" id="creditCardCvv" pattern="[0-9]{3,3}" maxlength="3"
+                                name="creditCardCvv" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                                required value="666">
+                            <!-- <input type="text" id="creditCardDate" pattern="[0-9]{2}/[0-9]{2}" maxlength="5" placeholder="AA/YY"> -->
+
+                            <div class="monthYear">
+                                <input type="text1" id="creditCardDateMonth" pattern="[1-9]|1[0-2]" min="1" max="12"
+                                    maxlength="2" name="creditCardDateMonth"
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" required
+                                    value="11">
+                                /
+                                <input type="text1" id="creditCardDateYear" pattern="[0-9]{2,2}" maxlength="2"
+                                    name="creditCardDateYear"
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" required
+                                    value="23">
+                            </div>
+                        </div> <br>
+
+                        <!--BOTON VALIDAR-->
+                        <div class="validarButton">
+                            <button type="submit" value="Enviar Respuestas" id="enviar">Finalizar Pedido</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div><br>
+
+            <div class="back">
+                <h3><a href="#">🠄 Volver </a></h3>
+            </div>
+
+            <hr>
+
+            <div>
+                <h3 class="politicas">
+                    <a href="#"> Política de reembolso </a>
+                    <a href="#"> Política de envío </a>
+                    <a href="#"> Política de privacidad </a>
+                    <a href="#"> Términos del servicio </a>
+                    <a href="#"> Información de contacto </a>
+                </h3>
+            </div>
+
+        </section>
+
+        <aside class="product">
+            <div class="productTitle">
+                <h1>Mi Orden</h1>
+            </div>
+
+            <div class="productDetail">
+
+                <div class="shoppingCart">
+                    <figure>
+                        <img src="img/Brooklyn Gray.png" alt="Brooklyn Gray">
+                    </figure>
+                    <p>Brooklyn Gray</p>
+                    <p class="right">$25.000</p>
+                </div>
+
+                <div class="shoppingCart">
+                    <figure>
+                        <img src="img/Avatar Brown.png" alt="Avatar Brown">
+                    </figure>
+                    <p>Avatar Brown</p>
+                    <p class="right">$25.000</p>
+                </div>
+
+                <div class="shoppingCart">
+                    <figure>
+                        <img src="img/shipping.png" alt="shipping">
+                    </figure>
+                    <p>Envio Santiago</p>
+                    <p class="right">$3.000</p>
+                </div>
+            </div>
+
+            <div class="sectionFinal">
+                <div class="total" id="total">
+                    <p class="finalPrice">Total</p>
+                    <p class="finalPrice">$53.000</p>
+                </div>
+            </div>
+
+        </aside>
+    </main>
+
+
+
+    <footer>
+        <div class="redesSociales">
+            <a href="#"><img src="img/facebook.png"></a>
+            <a href="#"><img src="img/instagram.png"></a>
+            <a href="#"><img src="img/whatsapp.png"></a>
+            <a href="#"><img src="img/tik-tok.png"></a>
         </div>
-      </div><br>
-      <hr>
-      <div>
-        <h3 class="politicas">
-          <a href="#"> Política de reembolso </a>
-          <a href="#"> Política de envío </a>
-          <a href="#"> Política de privacidad </a>
-          <a href="#"> Términos del servicio </a>
-          <a href="#"> Información de contacto </a>
-        </h3>
-      </div>
-
-    </section>
-
-    <aside class="product">
-      <div class="productTitle">
-        <h1>Mi Orden</h1>
-      </div>
-
-      <div class="productDetail">
-
-        <div class="shoppingCart">
-          <figure>
-            <img src="img/Brooklyn Gray.png" alt="Brooklyn Gray">
-          </figure>
-          <p>Brooklyn Gray</p>
-          <p>$25.000</p>
+        <div>
+            <p class="copyright">© 2023 - Look Naturel - Tecnología de Shopify</p>
         </div>
-
-        <div class="shoppingCart">
-          <figure>
-            <img src="img/Avatar Brown.png" alt="Avatar Brown">
-          </figure>
-          <p>Avatar Brown</p>
-          <p>$25.000</p>
-        </div>
-
-        <div class="shoppingCart">
-          <figure>
-            <img src="img/shipping.png" alt="shipping">
-          </figure>
-          <p>Envio Santiago</p>
-          <p>$3.000</p>
-        </div>
-      </div>
-
-      <div class="sectionFinal">
-        <div class="total" id="total">
-          <p class="finalPrice">Total</p>
-          <p class="finalPrice">$53.000</p>
-        </div>
-      </div>
-    </aside>
-  </main>
-
-
-
-  <footer>
-    <div class="redesSociales">
-      <a href="#"><img src="img/facebook.png"></a>
-      <a href="#"><img src="img/instagram.png"></a>
-      <a href="#"><img src="img/whatsapp.png"></a>
-      <a href="#"><img src="img/tik-tok.png"></a>
-    </div>
-    <div>
-      <p class="copyright">© 2023 - Look Naturel - Tecnología de Shopify</p>
-    </div>
-  </footer>
-  <script src="index.js" type="module"></script>
+    </footer>
+    <script src="index.js" type="module"></script>
 </body>
 
 </html>

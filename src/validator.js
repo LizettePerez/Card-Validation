@@ -1,5 +1,5 @@
 const validator = {
-  isValid: function(creditCardNumber) {
+  isValid: function (creditCardNumber) {
     let sum = 0;
     let shouldDouble = false;
     for (let i = creditCardNumber.length - 1; i >= 0; i--) {

@@ -20,7 +20,8 @@ const validator = {
     const lastFourDigits = creditCardNumber.substr(-4);
     const maskedDigits = creditCardNumber.substr(0, creditCardNumber.length - 4).replace(/./g, "#");
     return maskedDigits + lastFourDigits;
-  }
+  },
+  
 };
 
 export default validator;

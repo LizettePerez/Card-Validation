@@ -1,282 +1,352 @@
 main {
-    display: table;
-    width: 100%;
+  display: table;
+  width: 100%;
 }
 
 section {
-    float: left;
-    width: 58%;
-    margin-left: 10px;
+  float: left;
+  width: 58%;
+  margin-left: 10px;
 }
 
 aside {
-    float: right;
-    width: 38%;
-    margin: 2px;
+  float: right;
+  width: 38%;
+  margin: 2px;
 }
 
 /* HEADER */
 
 header {
-    text-align: center;
-    display: block;
-    color: white;
-    background-color: #e2f4f6;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+  text-align: center;
+  display: block;
+  color: white;
+  background-color: #e2f4f6;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 header img {
-    width: 100%;
+  width: 100%;
 }
 
 .title {
-    background-color: #ecc4bc;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-weight: 800;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+  background-color: #ecc4bc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 800;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 /*  */
 
 body {
-    color: #33a5aa;
-    font-family: 'Montserrat', sans-serif;
+  color: #33a5aa;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
 h1 {
-    text-align: center;
-    text-align: left;
+  text-align: center;
+  text-align: left;
 }
 
 h2 {
-    font-weight: 400;
-    font-size: medium;
+  font-weight: 400;
+  font-size: medium;
 }
 
 h3 {
-    font-weight: 500;
-    font-size: smaller;
+  font-weight: 500;
+  font-size: smaller;
 }
 
 
 /* NAV */
 
 ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #e2f4f6;
-    font-weight: 700;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e2f4f6;
+  font-weight: 700;
 }
 
 ol li {
-    float: left;
+  float: left;
 }
 
 
 li a {
-    display: block;
-    color: #33a5aa;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
+  display: block;
+  color: #33a5aa;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
 }
 
 li a:hover {
-    background-color: #33a5aa;
-    color: white;
+  background-color: #33a5aa;
+  color: white;
 }
 
 
 li a:focus {
-    background: #ecc4bc;
-    color: white
+  background: #ecc4bc;
+  color: white
 }
 
 
 /* LUPA */
 li img {
-    width: 20px;
+  width: 20px;
 }
 
 .lupa {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 /*  */
 
 .active {
-    background-color: #ecc4bc !important;
-    color: white;
+  background-color: #ecc4bc !important;
+  color: white;
 }
 
 input[type="search"] {
-    padding: 10px;
-    margin-left: 15px;
-    width: 200px;
-    text-align: center;
-    border-color: #33a5aa;
+  padding: 10px;
+  margin-left: 15px;
+  width: 200px;
+  text-align: center;
+  border-color: #33a5aa;
 
 }
 
 input {
-    border-color: #ecc4bc;
-    color: #33a5aa;
+  border-color: #ecc4bc;
+  color: #33a5aa;
 }
 
 /* Color letras buscador */
 ::placeholder {
-    color: #33a5aa;
+  color: #33a5aa;
 }
 
 /* PAGO */
 
 .infoPago {
-    text-decoration: none;
-    color: #ecc4bc;
-    padding-left: 5px;
+  text-decoration: none;
+  color: #ecc4bc;
+  padding-left: 5px;
 }
 
 .conteinerLogos {
-    background-color: #ffff;
-    border: 1px solid #33a5aa;
-    padding: 10px 40px;
-    margin: 0 200px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-style: none;
+  background-color: #ffff;
+  border: 1px solid #33a5aa;
+  padding: 10px 40px;
+  margin: 0 170px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-style: none;
 }
 
 .logoPago img {
-    width: 100px;
+  width: 140px;
 }
 
 .containerPago {
-    background-color: #e7f4f6;
-    border: 1px solid #33a5aa;
-    padding: 10px 40px;
-    margin: 0 200px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+  background-color: #e7f4f6;
+  border: 1px solid #33a5aa;
+  padding: 10px 40px;
+  margin: 0 170px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 label {
-    font-weight: 600;
+  font-weight: 600;
 }
+
+/* DISEÑO TARJETA */
+.cardType {
+  position: relative;
+  display: inline-block;
+}
+
+.cardType img {
+  width: 90%;
+  text-align: center;
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 25px;
+  border: 2px solid #c0bebe;
+
+}
+
+
+.cardTypeResult {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 40px 0;
+  padding-left: 110px;
+}
+
+.cardName {
+  font-family: 'Halter', sans-serif;
+  font-weight: 500;
+  font-size: large;
+  text-align: right;
+  display: block;
+  color: #2d2525;
+  text-shadow: 0 2px 0 #ccc, 0 2px 2px black;
+}
+
+.cardNumber {
+  text-align: center;
+  font-weight: 700;
+  font-size: 17px;
+  font-family: 'Halter', sans-serif;
+  padding: 60px 0 0 0;
+  color: #2d2525;
+  font-weight: bold;
+  text-shadow: 0 2px 0 #ccc, 0 2px 2px black;
+}
+
+
+.cardCvvDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Halter', sans-serif;
+  padding: 70px 0 0 0;
+  color: #2d2525;
+  text-shadow: 0 2px 0 #ccc, 0 2px 2px black;
+
+}
+
+.cardCvvDateMonthYear {
+  padding: 0 160px 0 0;
+
+}
+
 
 /* LINEA NUMERO DE TARJETA Y NOMBRE DE TITULO*/
 .spaceTitleNumbName {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    padding: 5px;
-    /* Establece la dirección de la fila a derecha-izquierda */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 5px;
+  /* Establece la dirección de la fila a derecha-izquierda */
 }
 
 label[for="creditCardNumber"] {
-    order: 1;
-    /* Mueve el label de número de tarjeta al final de la fila */
+  order: 1;
+  /* Mueve el label de número de tarjeta al final de la fila */
 }
 
 label[for="creditCardName"] {
-    padding-right: 13px;
+  padding-right: 13px;
 }
 
 /* LINEA INPUT NUMERO DE TARJETA Y NOMBRE DE TITULO*/
 .spaceInputNumbName {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 input[type="text"] {
-    width: 40%;
-    padding: 6px;
+  width: 40%;
+  padding: 6px;
 }
 
 /* LINEA  FECHA Y CVV*/
 .spaceTitleDateCvv {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 5px;
 }
 
 /* LINEA INPUT FECHA Y CVV*/
 .spaceInputDateCvv {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 label[for="creditCardDate"] {
-    order: 1;
+  order: 1;
 }
 
 label[for="creditCardCvv"] {
-    padding-right: 128px;
+  padding-right: 128px;
 }
 
 input[type="text1"] {
-    width: 32%;
-    padding: 6px;
+  width: 30%;
+  padding: 6px;
 }
 
 input[type="text2"] {
-    width: 68%;
-    padding: 6px;
+  width: 60%;
+  padding: 6px;
 }
 
 /*BOTON FINALIZAR*/
 
 .validarButton {
-    text-align: center;
+  text-align: center;
 }
 
 button {
-    border-radius: 8px;
-    background: #33a5aa;
-    color: white;
-    border: none;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-    font-size: 18px;
-    padding: 10px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  border-radius: 8px;
+  background: #33a5aa;
+  color: white;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 button:hover {
-    background-color: #ecc4bc;
-    color: white;
+  background-color: #ecc4bc;
+  color: white;
 }
 
 button:focus {
-    background: green;
-    color: white
+  background: green;
+  color: white
 }
 
 
 hr {
-    border: 1px solid #33a5aa;
-    width: 100%;
+  border: 1px solid #33a5aa;
+  width: 100%;
 }
 
 h3 a {
-    text-decoration: none;
-    color: #ecc4bc;
-    padding-left: 25px;
+  text-decoration: none;
+  color: #ecc4bc;
+  padding-left: 25px;
 }
 
 
@@ -284,97 +354,73 @@ h3 a {
 /* SHOPPING CART */
 
 .product {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 
 .productDetail {
-    background-color: #e2f4f6;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    font-weight: 500;
-    border: 1px solid #33a5aa;
-    padding: 1px;
-    margin: 0 60px;
+  background-color: #e2f4f6;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  font-weight: 500;
+  border: 1px solid #33a5aa;
+  padding: 1px;
+  margin: 0 60px;
 }
 
 .shoppingCart {
-    display: flex;
-    flex: row;
-    justify-content: justify;
-    align-items: center;
+  display: flex;
+  flex: row;
+  justify-content: justify;
+  align-items: center;
 }
 
 .shoppingCart figure img {
-    width: 70px;
-    height: 70px;
-    border-radius: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
 }
 
 .right {
-    padding-left: 100px;
+  padding-left: 100px;
 }
 
 .sectionFinal {
-    background-color: #ecc4bc;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    font-weight: 500;
-    border: 1px solid #33a5aa;
-    border-top-style: none;
-    margin: 0 60px;
+  background-color: #ecc4bc;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-weight: 500;
+  border: 1px solid #33a5aa;
+  border-top-style: none;
+  margin: 0 60px;
 
 }
 
 .total {
-    color: white;
-    font-weight: 800;
-    font-size: large;
-    display: flex;
-    flex: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 70px;
+  color: white;
+  font-weight: 800;
+  font-size: large;
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 70px;
 }
 
 
 /* FOOTER */
 
 .redesSociales {
-    text-align: center;
-    display: block;
+  text-align: center;
+  display: block;
 }
 
 .redesSociales img {
-    width: 50px;
-    margin: 0 10px;
+  width: 50px;
+  margin: 0 10px;
 }
 
 .copyright {
-    font-weight: 400;
-    font-size: x-small;
-    text-align: center;
-}
-
-.containerImg {
-    position: relative;
-    display: inline-block;
-}
-
-.containerImg img {
-    width: 90%;
-    text-align: center;
-    display: block;
-    max-width: 100%;
-    margin: auto;
-}
-
-
-.imageOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    font-family: sans-serif;
+  font-weight: 400;
+  font-size: x-small;
+  text-align: center;
 }

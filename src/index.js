@@ -1,26 +1,25 @@
 import validator from './validator.js';
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.querySelector('form');
+const form = document.querySelector('form');
 
-  form.addEventListener('submit', function (event) {
-    event.preventDefault(); // Evita que se envíe el formulario
+form.addEventListener('submit', function (event) {
+  event.preventDefault(); // Evita que se envíe el formulario
 
-    const creditCardNumber = form.querySelector('#creditCardNumber').value;
-    /* eslint-disable no-console */
-    console.log(creditCardNumber);
-    /* eslint-enable no-console */
+  const creditCardNumber = form.querySelector('#creditCardNumber').value;
+  /* eslint-disable no-console */
+  console.log(creditCardNumber);
+  /* eslint-enable no-console */
 
 
-    if (validator.isValid(creditCardNumber)) {
-      const lastFourDigits = creditCardNumber.substr(-4);
-      alert(`¡Compra realizada! Se realizo un cargo en la tarjeta finalizada en ${lastFourDigits} por un monto de $53.000`);
-    } else {
-      alert('El número de tarjeta no es válido, no se pudo realizar la compra. Intenta nuevamente.');
-    }
-  });
+  if (validator.isValid(creditCardNumber)) {
+    const lastFourDigits = creditCardNumber.substr(-4);
+    alert(`¡Compra realizada! Se realizo un cargo en la tarjeta finalizada en ${lastFourDigits} por un monto de $53.000`);
+  } else {
+    alert('El número de tarjeta no es válido, no se pudo realizar la compra. Intenta nuevamente.');
+  }
 });
+
 
 
 // TARJETA NUMERO

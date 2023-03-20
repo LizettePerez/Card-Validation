@@ -203,7 +203,7 @@ label {
 .cardName {
   font-family: 'Halter', sans-serif;
   font-weight: 500;
-  font-size: large;
+  font-size: large; 
   text-align: right;
   display: block;
   color: #33a5aa;

@@ -4,4 +4,4 @@ Web diseñada en base a tienda de lentes de contacto. Pensada en usuarios de Chi
 ![portada](https://user-images.githubusercontent.com/83388668/226417354-7ce83110-772f-4b55-b076-3d16f4f978b3.png)
 
 
-https://lizetteperez.github.io/DEV006-card-validation/src/
+https://lizetteperez.github.io/Card-Validation/src/
